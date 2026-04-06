@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoramento Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="center-screen" id="home">
+  <h1>Colégio Estadual São Cristóvão - EFMP</h1>
+  <div class="time" id="time"></div>
+  <div class="date" id="date"></div>
+  <button onclick="enterSystem()">Entrar no Sistema</button>
+</div>
+
+<div class="dashboard" id="dashboard">
+  <h1>Painel Inteligente</h1>
+
+  <canvas id="chart"></canvas>
+
+  <div class="camera">
+    <video id="video" autoplay></video>
+    <p id="status">Aguardando análise...</p>
+  </div>
+
+  <audio id="alertSound" src="https://www.soundjay.com/buttons/beep-01a.mp3"></audio>
+
+  <div class="suggestions">
+    <h2>Sugestões</h2>
+    <ul id="tips"></ul>
+    <textarea id="newTip" placeholder="Digite uma sugestão..."></textarea>
+    <button onclick="addTip()">Adicionar</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
